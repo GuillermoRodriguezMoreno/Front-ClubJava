@@ -5,6 +5,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
+import { PostComponent } from './components/post/post.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -12,7 +13,8 @@ export const routes: Routes = [
     { path: 'header', component: HeaderComponent },
     { path: 'footer', component: FooterComponent },
     { path: 'navbar', component: NavbarComponent },
-    { path: 'sobre-nosotros', component: SobreNosotrosComponent }
+    { path: 'sobre-nosotros', component: SobreNosotrosComponent },
+    { path: 'post/:id', component: PostComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,27 @@
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <h1>{{ post.title }}</h1>
+                <p>{{ tags.join(", ") }}</p>
+                <p>{{ post.postDate }}</p>
+                <p>{{ post.body }}</p>
+                <p class="">
+                    <a href="">{{ post.author.username }}</a>
+                </p>
+            </div>
+            <hr class="my-4" />
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <h2 *NgIf="commentList.length > 0">Comentarios</h2>
+            </div>
+            <div *ngFor="let comment of commentList" class="col-md-10 col-lg-8 col-xl-7">
+                <p class="">
+                    <a href="">{{ comment.author.username }}</a>
+                </p>
+                <p>{{ comment.commentDate }}</p>
+                <p>{{ comment.body }}</p>
+                <hr class="my-4" />
+            </div>
+        </div>
+    </div>
+</article>
