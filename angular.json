@@ -26,12 +26,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/libs/bootstrap/dist/css/bootstrap.min.css",
               "src/libs/cssTemplate/styles.css",
               "src/libs/font/fontawesome.min.css"
             ],
             "scripts": [
-              "src/libs/bootstrap/dist/js/bootstrap.bundle.js",
               "src/libs/jsTemplate/scripts.js",
               "src/libs/font/all.min.js"
             ]
@@ -95,6 +93,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
