@@ -3,8 +3,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 //ENDPOINTS
-const POSTSURL="https://restapi-clubjava.onrender.com/v1/api/posts";
-const COMMENTSURL="https://restapi-clubjava.onrender.com/v1/api/comments";
+const POSTSURL="http://localhost:8080/v1/api/posts";
+const COMMENTSURL="http://localhost:8080/v1/api/comments";
 
 const HTTPOPTIONS = {
   headers: new HttpHeaders({
