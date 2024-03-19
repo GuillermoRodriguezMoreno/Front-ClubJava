@@ -30,8 +30,7 @@
               "src/libs/font/fontawesome.min.css"
             ],
             "scripts": [
-              "src/libs/jsTemplate/scripts.js",
-              "src/libs/font/all.min.js"
+              "src/libs/jsTemplate/scripts.js"
             ]
           },
           "configurations": {
