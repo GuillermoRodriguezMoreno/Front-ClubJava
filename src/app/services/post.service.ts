@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-//ENDPOINTS
+//ENDPOINTS URL
 const POSTSURL="https://restapi-clubjava.onrender.com/v1/api/posts";
 const COMMENTSURL="https://restapi-clubjava.onrender.com/v1/api/comments";
 
